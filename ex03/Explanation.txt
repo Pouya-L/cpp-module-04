@@ -1,0 +1,12 @@
+Interfaces: In C++, interfaces are typically implemented using abstract classes. An abstract class is a class that cannot be instantiated
+and usually contains at least one pure virtual function. A pure virtual function is a function that has no implementation in the base class
+and must be overridden in any derived class.
+
+Keypoints are :
+1. Abstract Class: A class with at least one pure virtual function.
+2. Pure Virtual Function: Declared by assigning 0 to the function declaration.
+3. Derived Classes: Must provide implementations for all pure virtual functions of the base class.
+
+Polymorphism: Allows for flexible and reusable code.
+Enforcement: Ensures derived classes implement specific methods.
+Abstraction: Hides implementation details from the user.
