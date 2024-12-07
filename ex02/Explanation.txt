@@ -1,9 +1,12 @@
-The task requires we to make the Animal class abstract so that it cannot be instantiated directly. This is a common practice in object-oriented programming to ensure that only derived classes (like Dog and Cat) can be instantiated, not the base class itself.
+The task requires we to make the Animal class abstract so that it cannot be instantiated directly.
+This is a common practice in object-oriented programming to ensure that only derived classes (like Dog and Cat) can be instantiated, not the base class itself.
 
 Explanation
-Abstract Class: An abstract class is a class that cannot be instantiated on its own. It is meant to be a base class for other classes. In C++, we can make a class abstract by declaring at least one pure virtual function.
+Abstract Class: An abstract class is a class that cannot be instantiated on its own.
+It is meant to be a base class for other classes. In C++, we can make a class abstract by declaring at least one pure virtual function.
 
-Pure Virtual Function: A pure virtual function is a function that has no implementation in the base class and must be overridden in derived classes. It is declared by assigning 0 to the function declaration.
+Pure Virtual Function: A pure virtual function is a function that has no implementation in the base class and must be overridden in derived classes.
+It is declared by assigning 0 to the function declaration.
 
 Example
 Before:
@@ -21,14 +24,19 @@ After:
 		virtual void makeSound() const = 0; // Pure virtual function
 	};
 
-In this example, Animal is now an abstract class because it has a pure virtual function makeSound. This means we cannot create an instance of Animal directly. we can only create instances of classes derived from Animal that implement the makeSound function.
+In this example, Animal is now an abstract class because it has a pure virtual function makeSound.
+This means we cannot create an instance of Animal directly. we can only create instances of classes derived from Animal that implement the makeSound function.
 
 Real-life Usefulness
-1. Enforcing Design: Abstract classes enforce a design where certain methods must be implemented by derived classes. This ensures that all derived classes adhere to a specific interface or contract.
+1. Enforcing Design: Abstract classes enforce a design where certain methods must be implemented by derived classes.
+This ensures that all derived classes adhere to a specific interface or contract.
 
-2. Preventing Instantiation: By making a class abstract, we prevent it from being instantiated directly. This is useful when the base class represents a concept that should not exist on its own, like Animal in wer case.
+2. Preventing Instantiation: By making a class abstract, we prevent it from being instantiated directly.
+This is useful when the base class represents a concept that should not exist on its own, like Animal in wer case.
 
-3. Polymorphism: Abstract classes are often used to achieve polymorphism. we can write code that works with pointers or references to the base class, and it will automatically use the derived class's implementation of the pure virtual functions.
+3. Polymorphism: Abstract classes are often used to achieve polymorphism.
+we can write code that works with pointers or references to the base class,
+and it will automatically use the derived class's implementation of the pure virtual functions.
 
 How to Implement
 1. Declare Pure Virtual Functions: Identify the functions that should be implemented by derived classes and declare them as pure virtual functions in the base class.
@@ -37,4 +45,5 @@ How to Implement
 
 3. Test: Verify that we cannot instantiate the base class directly and that the derived classes work as expected.
 
-By following these steps, we can make the Animal class abstract, ensuring that only specific types of animals (like Dog and Cat) can be instantiated, which aligns with the design requirements.
+By following these steps, we can make the Animal class abstract,
+ensuring that only specific types of animals (like Dog and Cat) can be instantiated, which aligns with the design requirements.

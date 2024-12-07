@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: plashkar <marvin@42.fr>                    +#+  +:+       +#+         #
+#    By: plashkar <plashkar@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/07/29 19:22:04 by plashkar          #+#    #+#              #
-#    Updated: 2024/08/07 13:26:00 by plashkar         ###   ########.fr        #
+#    Updated: 2024/12/07 17:51:22 by plashkar         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -17,7 +17,7 @@ CC = c++
 STANDARD_FLAGS = -Wall -Werror -Wextra -std=c++98 -g
 
 SRC = \
-	
+
 	main.cpp \
 
 OBJ = $(SRC:.cpp=.o)
@@ -33,7 +33,7 @@ $(NAME): $(OBJ)
 	@echo "ex03 has been created."
 
 clean:
-	@rm -f *.o
+	@rm -f $(OBJ)
 	@echo Object files have been deleted.
 
 fclean: clean

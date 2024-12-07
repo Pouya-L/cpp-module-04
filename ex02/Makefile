@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: plashkar <marvin@42.fr>                    +#+  +:+       +#+         #
+#    By: plashkar <plashkar@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/07/29 19:22:04 by plashkar          #+#    #+#              #
-#    Updated: 2024/08/07 13:19:55 by plashkar         ###   ########.fr        #
+#    Updated: 2024/12/07 17:51:10 by plashkar         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -39,7 +39,7 @@ $(NAME): $(OBJ)
 	@echo "ex02 has been created."
 
 clean:
-	@rm -f *.o
+	@rm -f $(OBJ)
 	@echo Object files have been deleted.
 
 fclean: clean
